@@ -1,2 +1,97 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+<header>
+  <div id='youtube-logo'>
+    <%= image_tag 'youtube-logo-144-44.png', id:'youtube-logo-image'%>
+  </div>
+
+  <div id='search-bar'>
+    <div class='search-element'>
+    <%= text_field_tag 'search-field'%>
+    </div>
+    <div class='search-element'>
+    <%= image_tag 'search-logo.png', width:'65px', height:'28px' %>
+    </div>
+  </div>
+
+  <div class='google-logo'>
+    <%= image_tag 'google-top-right-logo-156-38.png', id:'google-logo-image'%>
+  </div>
+  
+</header>
+
+<section>
+  
+  <div id='main-central'>
+    <div id='main-video'>
+      <iframe width='640' height='360'
+      src='https://www.youtube.com/embed/oVFeIhPXM98' >
+      </iframe>
+      <div class='video-bloc'>
+        <h1>Zelda: Twilight Princess - Title Theme Acapella</h1>
+        <div id='author-description'>
+          <%= image_tag 'id-pic.png', width:'48px', height:'48px', id:'id-pic'%>
+          <div id='author'>
+            <h2>Smooth McGroove</h2>
+            <%= image_tag 'fans-281-52.png', width:'140px', height:'22px', id:'fans' %>
+          </div>  
+          <div id='number-of-views'>
+            482 761 vues
+          </div>
+        </div>
+        <%= image_tag 'video-links-610-34.png', width:'610px', height:'34px', id:'video-links'%>
+      </div>
+      <div class='video-bloc'>
+        video details
+      </div>
+      <div class='video-bloc'>
+        video comments
+      </div>
+    </div>  
+    <aside>
+      <div id:'aside-header'>
+        aside header
+      </div>
+      <div class='video-snipet-bloc'>
+        <%= image_tag 'snipet1.png' , class:'snipet'%>
+        <div class='video-snipet-description'>
+          video-snipet-description
+        </div>
+      </div>
+      <div class='video-snipet-bloc'>
+        <%= image_tag 'snipet2.png' , class:'snipet'%>
+        <div class='video-snipet-description'>
+          video-snipet-description
+        </div>
+      </div>
+      <div class='video-snipet-bloc'>
+        <%= image_tag 'snipet3.png' , class:'snipet'%>
+        <div class='video-snipet-description'>
+          video-snipet-description
+        </div>
+      </div>
+      <div class='video-snipet-bloc'>
+        <%= image_tag 'snipet4.png' , class:'snipet'%>
+        <div class='video-snipet-description'>
+          video-snipet-description
+        </div>
+      </div>
+      <div class='video-snipet-bloc'>
+        <%= image_tag 'snipet5.png' , class:'snipet'%>
+        <div class='video-snipet-description'>
+          video-snipet-description
+        </div>
+      </div>
+      <div class='video-snipet-bloc'>
+        <%= image_tag 'snipet6.png' , class:'snipet'%>
+        <div class='video-snipet-description'>
+          video-snipet-description
+        </div>
+      </div>
+      <div class='video-snipet-bloc'>
+        <%= image_tag 'snipet7.png' , class:'snipet'%>
+        <div class='video-snipet-description'>
+          video-snipet-description
+        </div>
+      </div>
+    </aside>
+  </div>
+</section>
